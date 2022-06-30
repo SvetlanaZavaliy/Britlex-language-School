@@ -1,3 +1,242 @@
+/* font-family: 'Poppins',sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    --font-family-poppins: 'Poppins', sans-serif;
+    /* --grey-light(#8F95A5; */
+    --color-text-black: #000000;
+    /* --background-light(#EEEEEE;) */
+    --background-main-grey: #E5E5E5;
+    --color-text-light-black: #263238;
+    --color-text-light-grey: #8F95A5;
+    /* --grey-grey(#546269) */
+    /* --light-grey(#2A3246) */
+    --color-text-white: #FFFFFF;
+    --background-grid-item-skills: #F5F5F5;
+}
+
 body {
-    background-color: rgb(127, 28, 62);
+    max-width: 1600px;
+    background-color: blue;
+    background: var(--background-main-grey);
+    font-family: var(--font-family-poppins);
+}
+
+/* <header class="header"> */
+.container {
+    max-width: 1338px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.header_menu_button {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+    color: var(--color-text-black);
+}
+
+.header_logo > span {
+    color: var(--color-text-light-grey);
+}
+
+.header_nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--color-text-light-black);
+}
+
+.header_nav li {
+    display: inline-block;
+}
+
+.header_nav li:not(:first-of-type){
+    margin-left: 50px;
+}
+
+.header_link:hover {
+    color: #23495d;
+    transition: all 0.5s ease;
+}
+        
+.button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-text-black);
+    border: 2px solid var(--color-text-light-black);
+    border-radius: 10px;
+    width: 312px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #23495d;
+    transition: all 0.5s ease;
+    background-color: rgb(209, 229, 222);
+}
+
+.hero {
+    /* background-color: #8F95A5; */
+    margin-top: 55px;
+}
+
+.hero_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_left {
+    max-width: 540px;
+}
+
+.h1_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+    color: var(--color-text-black);
+    max-width: 386px;
+}
+
+.hero_text {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--color-text-light-grey);
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.hero_link {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.5;
+    color: var(--color-text-white);
+    background-color: var(--color-text-light-black);
+    padding: 25px 112px;
+    border-radius: 10px;
+}
+
+/* <section class="skills"> */
+
+.skills {
+    margin-top: 180px;
+    background-color: violet;
+}
+
+.h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+    color: var(--color-text-black);
+    text-align: center;
+    margin-bottom: 60px;    
+}
+
+.grid_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.grid_item_skills {
+    background-color: var(--background-grid-item-skills);
+    padding: 32px 18px;
+    max-width: 426px;
+}
+
+.one {
+    grid-area: 1/1/4/2;
+    background-color: green;
+}
+
+.two {
+    grid-area: 1/2/3/4;
+    background-color: rgb(130, 35, 82);
+}
+
+.three {
+    grid-area: 1/3/3/4;
+    background-color: rgb(72, 43, 103);
+}
+
+.four {
+    grid-area: 3/2/4/4;
+    background-color: rgb(136, 237, 42);
+    max-width: 882px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.h3_flex {
+    margin-top: 0;
+}
+
+.grid_h3 {
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--color-text-light-black);
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.grid_text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text-light-grey);
+    margin-bottom: 30px;
+}
+
+.grid_link_one {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-text-white);
+    border-radius: 10px;
+    background-color: var(--color-text-light-black);
+    padding: 17px 64px;
+}
+
+.grid_link {
+    padding: 17px 58px;    
 }
